@@ -38,13 +38,13 @@ This project aims to provide a user-friendly interface for college information a
 ### Prerequisites
 
 - XAMPP or any other local server with PHP and MySQL support.
-- Web browser (Chrome, Firefox, etc.)
+- Web browser (Chrome, Firefox,Brave  etc.)
 
 ### Installation
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/college-website.git
+    git clone https://github.com/Sandy99098/webTech.git
     ```
 
 2. **Move the project to your web server directory**:
@@ -52,8 +52,8 @@ This project aims to provide a user-friendly interface for college information a
 
 3. **Create the database**:
     - Open phpMyAdmin.
-    - Create a database named `college`.
-    - Import the `college.sql` file provided in the `database` directory.
+    - Create a database named `sutdent_enrollment`.
+    
 
 4. **Configure the database connection**:
     - Open `config.php` and ensure the database credentials match your setup:
@@ -61,7 +61,7 @@ This project aims to provide a user-friendly interface for college information a
       $servername = "localhost";
       $username = "root";
       $password = "";
-      $dbname = "college";
+      $dbname = "student_enrollment";
       ```
 
 5. **Start the local server**:
