@@ -38,8 +38,8 @@
                                 <td>{$row['course']}</td>
                                 <td>{$row['enrolled_at']}</td>
                                 <td>
-                                    <a href='../edit_student.php?id={$row['id']}' class='btn'>Edit</a>
-                                    <a href='../delete_student.php?id={$row['id']}' class='btn' onclick='return confirmDelete();'>Delete</a>
+                                    <a href='../edit_student.php?id={$row['id']}' class='btn ' id='edit'>Edit</a>
+                                    <a href='../delete_student.php?id={$row['id']}' class='btn' id='delete' onclick='return confirmDelete();'>Delete</a>
                                 </td>
                             </tr>";
                     }
@@ -48,7 +48,10 @@
                 }
                 ?>
             </tbody>
+        <a href="../index.php" class="btn">Home</a>
+
         </table>
+
     </div>
 </body>
 </html>

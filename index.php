@@ -12,7 +12,7 @@
         <h1>College Website</h1>
         <nav>
             
-            <img src="image.png" class="logo" href="index.php">
+            <img src="image.jpg" width="300" height="100"href="index.php">
             <a href="index.php">Home</a>
             <a href="about.php">About Us</a>
             <a href="contact.php">Contact Us</a>
@@ -42,8 +42,15 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
     <footer>
-        <p>&copy; 2024 College Website. All rights reserved.</p>
+        <p>&copy; 2024 Mount Annapurna Campus All rights reserved.</p>
     </footer>
 </body>
 </html>

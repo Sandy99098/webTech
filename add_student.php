@@ -28,6 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="container">
         <h1>Add Student</h1>
+
+        
+
         <form name="studentForm" action="add_student.php" method="post" onsubmit="return validateForm();">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -36,7 +39,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label for="course">Course:</label>
             <input type="text" id="course" name="course" required>
             <button type="submit" class="btn">Add Student</button>
+            
         </form>
+        <a href="index.php" class="btn">Home</a>
+
     </div>
 </body>
 </html>

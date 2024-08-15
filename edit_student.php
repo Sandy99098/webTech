@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,15 +32,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="container">
         <h1>Edit Student</h1>
+    
         <form name="studentForm" action="edit_student.php?id=<?php echo $id; ?>" method="post" onsubmit="return validateForm();">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" value="<?php echo $student['name']; ?>" required>
+            <input type="text" id="name" name="name" value="<?php echo htmlspecialchars($student['name']); ?>" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" value="<?php echo $student['email']; ?>" required>
+            <input type="email" id="email" name="email" value="<?php echo htmlspecialchars($student['email']); ?>" required>
             <label for="course">Course:</label>
-            <input type="text" id="course" name="course" value="<?php echo $student['course']; ?>" required>
+            <input type="text" id="course" name="course" value="<?php echo htmlspecialchars($student['course']); ?>" required>
             <button type="submit" class="btn">Update Student</button>
         </form>
     </div>
 </body>
 </html>
+
