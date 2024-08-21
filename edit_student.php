@@ -30,6 +30,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="scripts.js"></script>
 </head>
 <body>
+<style>
+        .container{
+            text-align: center;
+        }
+    </style> 
     <div class="container">
         <h1>Edit Student</h1>
     
@@ -39,7 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" value="<?php echo htmlspecialchars($student['email']); ?>" required>
             <label for="course">Course:</label>
-            <input type="text" id="course" name="course" value="<?php echo htmlspecialchars($student['course']); ?>" required>
+             <select id="course" name="course" class="btn" required>
+            <option value="BSC CSIT" <?php if($student['course'] == 'BSC CSIT') echo 'selected'; ?>>BSC CSIT</option>
+            <option value="BBS" <?php if($student['course'] == 'BBS') echo 'selected'; ?>>BBS</option>
+            </select><br>
             <button type="submit" class="btn">Update Student</button>
         </form>
     </div>

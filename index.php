@@ -8,15 +8,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<style>
+        nav .homeAnime {
+            /* background-color: #060f13; */
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav .homeAnime:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
     <header>
-        <h1>College Website</h1>
         <nav>
-            
-            <img src="image.jpg" width="300" height="100"href="index.php">
-            <a href="index.php">Home</a>
-            <a href="about.php">About Us</a>
-            <a href="contact.php">Contact Us</a>
-            <a href="student_enrollment/index.php">Student Enrollment</a>
+        <a class="homeAnime" href="index.php">
+        <img src="image.jpg" width="300" height="100" alt="College Logo">
+            <a class="homeAnime" href="index.php">Home</a>
+            <a class="homeAnime" href="about.php">About Us</a>
+            <a class="homeAnime" href="contact.php">Contact Us</a>
+            <a class="homeAnime" href="student_enrollment/index.php">Student Enrollment</a>
         </nav>
     </header>
 

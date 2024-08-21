@@ -26,6 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="scripts.js"></script>
 </head>
 <body>
+    <style>
+        .container{
+            text-align: center;
+        }
+    </style>
     <div class="container">
         <h1>Add Student</h1>
 
@@ -37,7 +42,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="course">Course:</label>
-            <input type="text" id="course" name="course" required>
+           
+            <select id="course" name="course" class="btn" required>
+        <option value="BSC CSIT">BSC CSIT</option>
+        <option value="BBS">BBS</option>
+    </select><br><br>
             <button type="submit" class="btn">Add Student</button>
             
         </form>
