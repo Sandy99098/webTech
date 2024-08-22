@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,18 @@
     <link rel="stylesheet" href="../styles.css">
     <script src="../scripts.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>Student Enrollment</h1>
         <a href="../add_student.php" class="btn">Add Student</a>
+        <a href="../index.php" class="btn">Home</a>
+
+
+
         <table>
             <thead>
+
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
@@ -47,11 +54,13 @@
                     echo "<tr><td colspan='6'>No students found</td></tr>";
                 }
                 ?>
+
             </tbody>
-        <a href="../index.php" class="btn">Home</a>
+
 
         </table>
 
     </div>
 </body>
+
 </html>
