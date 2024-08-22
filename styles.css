@@ -6,6 +6,7 @@ body {
     padding: 0;
     height: 100%;
     min-height: 100vh; 
+    /* background-image:url(phewa-lake.png) ; */
 }
 
 .container {
@@ -21,6 +22,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: auto; 
+    /* background-image: url(phewa-lake.png); */
 }
 
 h1, h2, h3 {
@@ -215,7 +217,7 @@ table tbody td a:hover {
 
 /* Index Page Styles */
 .index-hero {
-    background: #007bff;
+    background: #18d44d;
     color: #fff;
     padding: 40px 20px;
     text-align: center;

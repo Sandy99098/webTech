@@ -21,6 +21,7 @@
         transform: scale(1.1);
     }
     .container{
+        background-image: url(phewa-lake.png);
         overflow: auto;
         /* scrollbar-height: ; */
     }
